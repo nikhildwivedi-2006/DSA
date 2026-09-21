@@ -23,6 +23,9 @@ public class Arr13LetRotateOptimal {
 
         k = k % n;
 
+        if (k == 0)
+            return;
+
         reverse(arr, 0, k - 1);
 
         reverse(arr, k, n - 1);
